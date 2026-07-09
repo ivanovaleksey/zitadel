@@ -35,7 +35,6 @@ jobs:
     permissions:
       contents: write
       packages: write
-    secrets:
     if: ${{ github.event_name == 'workflow_dispatch' }}
     with:
       node_version: "22"
