@@ -28,7 +28,6 @@ jobs:
     with:
       node_version: "22"
     secrets:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       NX_CLOUD_ACCESS_TOKEN_READONLY: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
 
   pack:
