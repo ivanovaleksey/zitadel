@@ -31,8 +31,7 @@ jobs:
       dry_run: true
 
   pack-archives:
-    runs-on:
-      group: zitadel-public
+    runs-on: ubuntu-22.04
     environment: ${{ github.ref_protected == 'true' && 'Protected' || null }}
     needs: version
     permissions:
@@ -76,8 +75,7 @@ jobs:
           path: .artifacts/pack
 
   docker:
-    runs-on:
-      group: zitadel-public
+    runs-on: ubuntu-22.04
     environment: ${{ github.ref_protected == 'true' && 'Protected' || null }}
     needs: [version, pack-archives]
     permissions:
