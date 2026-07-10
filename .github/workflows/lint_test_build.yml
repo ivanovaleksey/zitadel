@@ -13,7 +13,7 @@ on:
 jobs:
   lint_test_build:
     name: Lint, Test and Build
-    runs-on: depot-ubuntu-22.04-16
+    runs-on: ubuntu-22.04
     environment: ${{ github.ref_protected == 'true' && 'Protected' || null }}
     steps:
       - name: Checkout Repository
