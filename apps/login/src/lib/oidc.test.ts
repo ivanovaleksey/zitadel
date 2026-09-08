@@ -186,7 +186,7 @@ describe("loginWithOIDCAndSession", () => {
       sessionCookies: mockCookies,
     });
 
-    expect(result).toEqual({ error: "Unknown error occurred" });
+    expect(result).toEqual({ error: "Unknown error occurred OIDC" });
   });
 
   it("should reject javascript: defaultRedirectUri in FailedPrecondition path (XSS prevention)", async () => {

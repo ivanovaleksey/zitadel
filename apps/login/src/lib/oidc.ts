@@ -99,7 +99,7 @@ export async function loginWithOIDCAndSession({
           }
           return { redirect: signedinUrl + "?" + params.toString() };
         } else {
-          return { error: "Unknown error occurred" };
+          return { error: "Unknown error occurred OIDC" };
         }
       }
     }
